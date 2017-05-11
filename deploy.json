@@ -1,6 +1,6 @@
 {
   "apps": {
-    "name": "server",
+    "name": "bucaramangajs",
     "script": "server/index.js",
     "max_memory_restart": "250M",
     "instances" : 0,
