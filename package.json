@@ -1,0 +1,38 @@
+{
+  "name": "bucaramangajs-org",
+  "version": "1.0.0",
+  "private": true,
+  "main": "server/index.js",
+  "scripts": {
+    "start": "NODE_PATH=./ node server/index.js",
+    "start:watch": "NODE_PATH=./ nodemon server/index.js",
+    "start:production": "NODE_ENV=production npm run start",
+    "build": "npm run build-css && npm run build-js",
+    "build:production": "NODE_ENV=production npm run build-css && NODE_ENV=production npm run build-js",
+    "build-css": "gulp sass",
+    "build-js": "webpack",
+    "deploy": "npm run build:production && pm2 startOrRestart deploy.json --env production",
+    "postinstall": "npm run build:production"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.4.0",
+    "browser-sync": "^2.18.8",
+    "browser-sync-webpack-plugin": "^1.1.4",
+    "compression": "^1.6.2",
+    "cssnano": "^3.10.0",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-if": "^2.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "materialize-css": "^0.98.0",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.11.0",
+    "nunjucks": "^2.4.2",
+    "pm2": "^2.4.5",
+    "webpack": "^2.5.1"
+  }
+}
