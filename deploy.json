@@ -1,0 +1,14 @@
+{
+  "apps": {
+    "name": "server",
+    "script": "server/index.js",
+    "max_memory_restart": "250M",
+    "instances" : 0,
+    "exec_mode" : "cluster",
+    "env_production": {
+      "NODE_PATH": "./",
+      "NODE_ENV": "production",
+      "PORT": 8000
+    }
+  }
+}
