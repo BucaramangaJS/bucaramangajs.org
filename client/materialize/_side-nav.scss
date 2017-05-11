@@ -1,0 +1,10 @@
+.side-nav {
+  width: 250px;
+
+  li {
+    & > a {
+      padding: 0 2rem;
+      font-weight: bold;
+    }
+  }
+}

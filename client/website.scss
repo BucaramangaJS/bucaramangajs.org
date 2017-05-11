@@ -46,8 +46,11 @@
 //@import "components/date_picker/default.date";
 //@import "components/date_picker/default.time";
 
+@import './materialize/side-nav';
+
 @import './design/global';
 @import './design/apptop';
 @import './design/nav';
 @import './design/header';
+@import './design/section';
 @import './design/footer';

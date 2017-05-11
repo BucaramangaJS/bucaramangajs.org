@@ -3,5 +3,22 @@
   "description": "Comunidad de desarrolladores JavaScript en Bucaramanga y su área metropolitana",
   "header": {
     "title": "Comunidad JavaScript de Bucaramanga"
-  }
+  },
+  "intro": [
+    "Hemos creado este grupo con el fin de integrar a la comunidad de desarrolladores JavaScript (front end, backend, node, internet of things, nodebots, etc) de la ciudad de Bucaramanga, Colombia, y su área metropolitana.",
+    "Nuestra filosofía será siempre la de mantener un ambiente informal, nada estricto en ningún sentido. Así que cualquier colaboración, en cualquier sentido, será muy bien recibida.",
+    "¡Bienvenid@!"
+  ],
+  "nextEvent": {
+    "defined": false,
+    "meetup": "",
+    "gmaps": "",
+    "title": "",
+    "description": "",
+    "image": "",
+    "date": "",
+    "time": "",
+    "place": ""
+  },
+  "noEventText": "No tenemos eventos programados en el momento, sin embargo hacemos los eventos el último Jueves de cada mes. Quédate conectado para estar al tanto!"
 }

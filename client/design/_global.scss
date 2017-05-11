@@ -6,6 +6,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
 }
 
+p {
+  line-height: 1.4;
+  font-size: 1.125rem;
+
+  @media #{$medium-and-up} {
+    font-size: 1.3125rem;
+  }
+}
+
 a {
   transition: all 250ms ease-out;
 }

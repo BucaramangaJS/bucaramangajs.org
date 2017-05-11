@@ -32,7 +32,7 @@
                   <a href="/#" class="brand-logo">
                     <img src="/img/logo.jpg" alt="Logo de BucaramangaJS">
                   </a>
-                  <a href="#" data-activates="mobile-menu" class="button-collapse right">
+                  <a href="#" data-activates="mobile-menu" class="button-collapse">
                     <i class="mdi mdi-menu"></i>
                   </a>
                   <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -82,11 +82,118 @@
         </li>
       </ul>
 
-      <div style="height: 1000px"></div>
+      <section class="section section--inverse">
+        <div class="row">
+          <div class="col s12">
+            {% for paragraph in intro %}
+            <p>{{paragraph}}</p>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
 
-      <footer class="footer"></footer>
+      <section class="section">
+        <div class="row">
+          <div class="col s12">
+            <h2>Próximo Evento</h2>
+            {% if nextEvent.defined %}
+            <p>Próximo evento a seguir.</p>
+            {% else %}
+            <p class="center-align">
+              {{noEventText}}
+            </p>
+            {% endif %}
+          </div>
+        </div>
+        <div class="section__links row">
+          <div class="col s12 m3">
+            <a class="section__link" href="https://bucaramangajs-slack.herokuapp.com/" target="slack">
+              <img src="/img/external/slack.png" alt="Logo de Slack">
+              <p>Únete en Slack</p>
+            </a>
+          </div>
+          <div class="col s12 m3">
+            <a class="section__link" href="https://docs.google.com/forms/d/1JutAp_AzD3TpU54O62UIgLHjPq8AhAHFxD53s3v3DiM/viewform" target="google_forms">
+              <img src="/img/external/google-forms.png" alt="Logo de Google Forms">
+              <p>Contáctanos</p>
+            </a>
+          </div>
+          <div class="col s12 m3">
+            <a class="section__link" href="http://meetup.com/BucaramangaJS/" target="meetup">
+              <img src="/img/external/meetup.png" alt="Logo de Meetup">
+              <p>Ver Eventos Pasados</p>
+            </a>
+          </div>
+          <div class="col s12 m3">
+            <a class="section__link" href="https://medium.com/bucaramangajs" target="medium">
+              <img src="/img/external/medium.png" alt="Logo de Medium">
+              <p>Ver Artículos</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--inverse">
+        <div class="row">
+          <div class="col s12">
+            <h2>Patrocinadores</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="row">
+          <div class="col s12">
+            <h2>Colaboradores</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--inverse">
+        <div class="row">
+          <div class="col s12">
+            <h2>Comunidades</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="row">
+          <div class="col s12">
+            <h2>Últimos Tweets</h2>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="row">
+          <div class="col s12">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/bucaramangaJS/" target="facebook">
+                  <i class="mdi mdi-facebook-box"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/bucaramangajs" target="twitter">
+                  <i class="mdi mdi-twitter-box"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCyvdsvq7AoqTudlmvWKCPHg" target="youtube">
+                  <i class="mdi mdi-youtube-play"></i>
+                </a>
+              </li>
+            </ul>
+            <a href="https://github.com/BucaramangaJS/bucaramangajs.org" target="opensource">Proyecto Open Source</a>
+            <span>-</span>
+            <a href="https://github.com/BucaramangaJS/codigo-de-conducta" target="codigodeconducta">Código de Conducta</a>
+          </div>
+        </div>
+      </footer>
 
     </div>
+
     <script src="/js/jquery.min.js"></script>
     <script src="/js/materialize.min.js"></script>
     <script src="/js/website.js" async></script>
