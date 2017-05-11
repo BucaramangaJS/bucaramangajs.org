@@ -22,40 +22,43 @@
   <body>
     <div class="app">
 
+      <!-- TOP -->
       <div class="apptop">
         <div class="apptop__background">
           <div class="apptop__overlay">
 
+            <!-- NAV -->
             <div class="navbar-fixed">
               <nav class="nav">
                 <div class="nav-wrapper">
-                  <a href="/#" class="brand-logo">
+                  <a href="/" class="brand-logo">
                     <img src="/img/logo.jpg" alt="Logo de BucaramangaJS">
                   </a>
                   <a href="#" data-activates="mobile-menu" class="button-collapse">
                     <i class="mdi mdi-menu"></i>
                   </a>
-                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <ul id="nav-mobile" class="right hide-on-med-and-down menu-list">
                     <li>
-                      <a href="#">Eventos</a>
+                      <a href="#eventos">Eventos</a>
                     </li>
                     <li>
-                      <a href="#">Patrocinadores</a>
+                      <a href="#patrocinadores">Patrocinadores</a>
                     </li>
                     <li>
-                      <a href="#">Colaboradores</a>
+                      <a href="#colaboradores">Colaboradores</a>
                     </li>
                     <li>
-                      <a href="#">Comunidad</a>
+                      <a href="#comunidad">Comunidad</a>
                     </li>
                     <li>
-                      <a href="#">Tweets</a>
+                      <a href="#tweets">Tweets</a>
                     </li>
                   </ul>
                 </div>
               </nav>
             </div>
 
+            <!-- HEADER -->
             <header class="header">
               <h1>{{header.title}}</h1>
             </header>
@@ -64,25 +67,27 @@
         </div>
       </div>
 
-      <ul id="mobile-menu" class="side-nav">
+      <!-- MENU MOBILE -->
+      <ul id="mobile-menu" class="side-nav menu-list">
         <li>
-          <a href="#">Eventos</a>
+          <a href="#eventos">Eventos</a>
         </li>
         <li>
-          <a href="#">Patrocinadores</a>
+          <a href="#patrocinadores">Patrocinadores</a>
         </li>
         <li>
-          <a href="#">Colaboradores</a>
+          <a href="#colaboradores">Colaboradores</a>
         </li>
         <li>
-          <a href="#">Comunidad</a>
+          <a href="#comunidad">Comunidad</a>
         </li>
         <li>
-          <a href="#">Tweets</a>
+          <a href="#tweets">Tweets</a>
         </li>
       </ul>
 
-      <section class="section section--inverse">
+      <!-- INTRO -->
+      <section class="section section--inverse scrollspy">
         <div class="row">
           <div class="col s12">
             {% for paragraph in intro %}
@@ -92,39 +97,57 @@
         </div>
       </section>
 
-      <section class="section">
+      <!-- EVENTS -->
+      <section id="eventos" class="section">
         <div class="row">
           <div class="col s12">
             <h2>Próximo Evento</h2>
             {% if nextEvent.defined %}
-            <p>Próximo evento a seguir.</p>
+              <div class="section__post row">
+                <div class="col s12 m4">
+                  <a href="{{nextEvent.meetup}}" target="meetup_event">
+                    <img src="{{nextEvent.image}}" alt="{{nextEvent.title}}">
+                  </a>
+                </div>
+                <div class="col s12 m8">
+                  <h3>
+                    <a href="{{nextEvent.meetup}}" target="meetup_event">{{nextEvent.title}}</a>
+                  </h3>
+                  <p>{{nextEvent.description}}</p>
+                  <p>
+                    {{nextEvent.date}},
+                    {{nextEvent.time}},
+                    <a href="{{nextEvent.gmaps}}" target="gmaps">{{nextEvent.place}}</a>
+                  </p>
+                </div>
+              </div>
             {% else %}
-            <p class="center-align">
-              {{noEventText}}
-            </p>
+              <p class="center-align">
+                {{noEventText}}
+              </p>
             {% endif %}
           </div>
         </div>
         <div class="section__links row">
-          <div class="col s12 m3">
+          <div class="col s6 m3">
             <a class="section__link" href="https://bucaramangajs-slack.herokuapp.com/" target="slack">
               <img src="/img/external/slack.png" alt="Logo de Slack">
               <p>Únete en Slack</p>
             </a>
           </div>
-          <div class="col s12 m3">
+          <div class="col s6 m3">
             <a class="section__link" href="https://docs.google.com/forms/d/1JutAp_AzD3TpU54O62UIgLHjPq8AhAHFxD53s3v3DiM/viewform" target="google_forms">
               <img src="/img/external/google-forms.png" alt="Logo de Google Forms">
               <p>Contáctanos</p>
             </a>
           </div>
-          <div class="col s12 m3">
+          <div class="col s6 m3">
             <a class="section__link" href="http://meetup.com/BucaramangaJS/" target="meetup">
               <img src="/img/external/meetup.png" alt="Logo de Meetup">
               <p>Ver Eventos Pasados</p>
             </a>
           </div>
-          <div class="col s12 m3">
+          <div class="col s6 m3">
             <a class="section__link" href="https://medium.com/bucaramangajs" target="medium">
               <img src="/img/external/medium.png" alt="Logo de Medium">
               <p>Ver Artículos</p>
@@ -133,23 +156,60 @@
         </div>
       </section>
 
-      <section class="section section--inverse">
+      <!-- PATROCINADORES -->
+      <section id="patrocinadores" class="section section--inverse">
         <div class="row">
           <div class="col s12">
             <h2>Patrocinadores</h2>
           </div>
+          <div class="row">
+            <div class="col s12">
+              <div class="section__sponsors">
+                {% for sponsor in sponsors %}
+                  <div class="section__sponsor">
+                    <a href="{{sponsor.url}}" target="_blank">
+                      <img src="{{sponsor.logo}}" alt="{{sponsor.name}}">
+                    </a>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section">
+      <!-- COLABORADORES -->
+      <section id="colaboradores" class="section">
         <div class="row">
           <div class="col s12">
             <h2>Colaboradores</h2>
           </div>
         </div>
+        <div class="row">
+          <div class="col s12">
+            <div class="section__team">
+              {% for member in team %}
+                <div class="section__member" itemscope itemtype="http://schema.org/Person">
+                  {% if member.url %}
+                  <a href="{{member.url}}" target="_blank">
+                  {% endif %}
+
+                    <img src="{{member.profile}}" alt="Foto de {{member.name}}" itemprop="image">
+                    <span itemprop="name">{{member.name}}</span>
+
+                  {% if member.url %}
+                  </a>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
       </section>
 
-      <section class="section section--inverse">
+      <!-- COMUNIDAD -->
+      <section id="comunidad" class="section section--inverse">
         <div class="row">
           <div class="col s12">
             <h2>Comunidades</h2>
@@ -157,7 +217,8 @@
         </div>
       </section>
 
-      <section class="section">
+      <!-- TWEETS -->
+      <section id="tweets" class="section">
         <div class="row">
           <div class="col s12">
             <h2>Últimos Tweets</h2>
@@ -165,6 +226,7 @@
         </div>
       </section>
 
+      <!-- FOOTER -->
       <footer class="footer">
         <div class="row">
           <div class="col s12">
@@ -184,10 +246,15 @@
                   <i class="mdi mdi-youtube-play"></i>
                 </a>
               </li>
+              <li>
+                <a href="https://github.com/BucaramangaJS/" target="github">
+                  <i class="mdi mdi-github-box"></i>
+                </a>
+              </li>
             </ul>
-            <a href="https://github.com/BucaramangaJS/bucaramangajs.org" target="opensource">Proyecto Open Source</a>
-            <span>-</span>
             <a href="https://github.com/BucaramangaJS/codigo-de-conducta" target="codigodeconducta">Código de Conducta</a>
+            <span>-</span>
+            <a href="https://github.com/BucaramangaJS/bucaramangajs.org" target="opensource">Proyecto Open Source</a>
           </div>
         </div>
       </footer>

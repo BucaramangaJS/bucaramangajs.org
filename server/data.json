@@ -11,14 +11,68 @@
   ],
   "nextEvent": {
     "defined": false,
-    "meetup": "",
-    "gmaps": "",
-    "title": "",
-    "description": "",
-    "image": "",
-    "date": "",
-    "time": "",
-    "place": ""
+    "meetup": "#",
+    "gmaps": "#",
+    "title": "Aprende ECMAScript 2017 y más allá",
+    "description": "Aprenderás acerca de Promesas, Proxies, nuevos modelos de datos, estructuras funcionales y algo de programación reactiva junto con excelentes exponentes.",
+    "image": "/img/events/nodejs.jpg",
+    "date": "25 de Mayo",
+    "time": "7 a 9 PM",
+    "place": "Medios TIC"
   },
-  "noEventText": "No tenemos eventos programados en el momento, sin embargo hacemos los eventos el último Jueves de cada mes. Quédate conectado para estar al tanto!"
+  "noEventText": "No tenemos eventos programados en el momento, sin embargo hacemos los eventos el último Jueves de cada mes. Quédate conectado para estar al tanto!",
+  "sponsors": [{
+    "name": "MediosTIC",
+    "logo": "/img/sponsors/mediostic.png",
+    "url": "http://mediostic.com"
+  }, {
+    "name": "Vulcan Estudios",
+    "logo": "/img/sponsors/vulcan-estudios.png",
+    "url": "http://vulcanst.co"
+  }, {
+    "name": "Secretaría TIC",
+    "logo": "/img/sponsors/secretariatic.png",
+    "url": "http://www.santander.gov.co/index.php/secretaria-tic"
+  }, {
+    "name": "Coworking Labs",
+    "logo": "/img/sponsors/coworking-labs.png",
+    "url": "http://coworkinglabs.net/"
+  }],
+  "team": [{
+    "name": "David Jaimes",
+    "profile": "/img/profiles/davidjaimes.jpg",
+    "url": "http://deivijt.com"
+  }, {
+    "name": "Iohan Sandoval",
+    "profile": "/img/profiles/iohansandoval.jpg",
+    "url": ""
+  }, {
+    "name": "Jairo Mejía",
+    "profile": "/img/profiles/jairomejia.jpg",
+    "url": "https://twitter.com/digitalhydra"
+  }, {
+    "name": "José Paternina",
+    "profile": "/img/profiles/josepaternina.jpg",
+    "url": "https://twitter.com/josedaniel"
+  }, {
+    "name": "Ricardo Farfán",
+    "profile": "/img/profiles/ricardofarfan.jpg",
+    "url": ""
+  }, {
+    "name": "Richard Pérez",
+    "profile": "/img/profiles/ricardperez.jpg",
+    "url": "https://www.linkedin.com/in/richardpq/"
+  }, {
+    "name": "Romel Pérez",
+    "profile": "/img/profiles/romelperez.jpg",
+    "url": "http://romelperez.com"
+  }, {
+    "name": "Sergio Junca",
+    "profile": "/img/profiles/sergiojunca.jpg",
+    "url": "https://twitter.com/junkitapro"
+  }, {
+    "name": "Yesid Rubiano",
+    "profile": "/img/profiles/yesidrubiano.jpg",
+    "url": "https://twitter.com/gyesidr"
+  }]
 }
