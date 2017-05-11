@@ -2,7 +2,7 @@ $(function () {
 
   $(".button-collapse").sideNav();
 
-  $('.side-nav a').on('click', () => {
+  $('.side-nav a').on('click', function () {
     $('.button-collapse').sideNav('hide');
   });
 
