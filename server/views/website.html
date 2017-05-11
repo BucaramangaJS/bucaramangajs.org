@@ -205,7 +205,6 @@
             </div>
           </div>
         </div>
-      </div>
       </section>
 
       <!-- COMUNIDAD -->
@@ -215,6 +214,19 @@
             <h2>Comunidades</h2>
           </div>
         </div>
+        <div class="row">
+          <div class="col s12">
+            <div class="section__comunities">
+              {% for comunity in comunities %}
+                <div class="section__comunity">
+                  <a href="{{comunity.url}}" target="_blank">
+                    <img src="{{comunity.image}}" alt="Foto de {{comunity.name}}">
+                  </a>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- TWEETS -->
@@ -222,6 +234,12 @@
         <div class="row">
           <div class="col s12">
             <h2>Últimos Tweets</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <a class="twitter-timeline" data-lang="es" data-height="2000" href="https://twitter.com/bucaramangajs">Tweets by bucaramangajs</a>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
         </div>
       </section>

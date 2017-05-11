@@ -74,5 +74,50 @@
     "name": "Yesid Rubiano",
     "profile": "/img/profiles/yesidrubiano.jpg",
     "url": "https://twitter.com/gyesidr"
+  }],
+  "comunities": [{
+    "name": "ColombiaJS",
+    "image": "/img/comunities/coljs.jpg",
+    "url": "http://www.coljs.org/"
+  }, {
+    "name": "MedellínJS",
+    "image": "/img/comunities/medellinjs.png",
+    "url": "http://medellinjs.org/"
+  }, {
+    "name": "BogotáJS",
+    "image": "/img/comunities/bogotajs.png",
+    "url": "http://bogotajs.com/"
+  }, {
+    "name": "CaliJS",
+    "image": "/img/comunities/calijs.png",
+    "url": "https://www.meetup.com/CaliJS/"
+  }, {
+    "name": "MonteríaJS",
+    "image": "/img/comunities/monteriajs.png",
+    "url": "https://www.meetup.com/monteriajs/"
+  }, {
+    "name": "PereiraJS",
+    "image": "/img/comunities/pereirajs.png",
+    "url": "http://pereirajs.org/"
+  }, {
+    "name": "PopayanJS",
+    "image": "/img/comunities/popayanjs.png",
+    "url": "https://www.meetup.com/popayanjs/"
+  }, {
+    "name": "QuibdóJS",
+    "image": "/img/comunities/quibdojs.png",
+    "url": "https://twitter.com/quibdojs"
+  }, {
+    "name": "VillavicencioJS",
+    "image": "/img/comunities/villavicenciojs.png",
+    "url": "https://www.meetup.com/villadevs/"
+  }, {
+    "name": "ManizalesJS",
+    "image": "/img/comunities/manizalesjs.png",
+    "url": "https://www.meetup.com/ManizalesJS/"
+  }, {
+    "name": "BarranquillaJS",
+    "image": "/img/comunities/barranquillajs.png",
+    "url": "https://www.meetup.com/BarranquillaJS/"
   }]
 }
