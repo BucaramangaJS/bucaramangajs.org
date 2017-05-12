@@ -36,7 +36,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
   </head>
   <body>
-    <div class="app">
+    <div class="app" itemscope itemtype="http://schema.org/Organization">
 
       <!-- TOP -->
       <div class="apptop">
@@ -48,7 +48,7 @@
               <nav class="nav">
                 <div class="nav-wrapper">
                   <a href="/" class="brand-logo">
-                    <img src="/img/logo.jpg" alt="Logo de BucaramangaJS">
+                    <img src="/img/logo.jpg" alt="Logo de BucaramangaJS" itemprop="logo">
                   </a>
                   <a href="#" data-activates="mobile-menu" class="button-collapse">
                     <i class="mdi mdi-menu"></i>
@@ -76,7 +76,7 @@
 
             <!-- HEADER -->
             <header class="header">
-              <h1>{{header.title}}</h1>
+              <h1 itemprop="name">{{header.title}}</h1>
             </header>
 
           </div>
@@ -105,7 +105,7 @@
       <!-- INTRO -->
       <section class="section section--inverse scrollspy">
         <div class="row">
-          <div class="col s12">
+          <div class="col s12" itemprop="description">
             {% for paragraph in intro %}
             <p>{{paragraph}}</p>
             {% endfor %}
