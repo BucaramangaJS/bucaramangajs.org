@@ -10,13 +10,13 @@
     "¡Bienvenid@!"
   ],
   "nextEvent": {
-    "defined": true,
-    "meetup": "https://www.meetup.com/BucaramangaJS/events/240086610/",
+    "defined": false,
+    "meetup": "",
     "gmaps": "https://www.google.com.co/maps/place/Medios+Tic/@7.0864326,-73.1168346,17z/data=!3m1!4b1!4m5!3m4!1s0x8e683fa3b21919cd:0xf5eb0c49daf26a2e!8m2!3d7.0864326!4d-73.1146459",
-    "title": "Arquitectura de Software y Leap Motion",
-    "description": "En esta ocasión hablaremos sobre la importancia de la Arquitectura de Software para nosotros los Desarrolladores. Y para el Rincón de Hardware tendremos un toque diferente en la web con Javascript y Leap Motion.",
-    "image": "/img/events/meetup7.jpg",
-    "date": "25 de Mayo",
+    "title": "Introduccion sobre Aplicaciones Node y React JS y su integracion con Symfony y Drupal",
+    "description": "",
+    "image": "/img/events/meetup8.jpg",
+    "date": "29 de Junio",
     "time": "7 a 9 PM",
     "place": "Medios TIC, Cl. 103 #22a-27"
   },
@@ -55,6 +55,14 @@
     "profile": "/img/profiles/josepaternina.jpg",
     "url": "https://twitter.com/josedaniel"
   }, {
+    "name": "Oscar Lozano",
+    "profile": "/img/profiles/oscarlozano.jpeg",
+    "url": "https://www.linkedin.com/in/oscararmandolozano/"
+  }, {
+    "name": "Pablo Prada",
+    "profile": "/img/profiles/pabloprada.jpg",
+    "url": "https://twitter.com/pabloprada"
+  }, {
     "name": "Ricardo Farfán",
     "profile": "/img/profiles/ricardofarfan.jpg",
     "url": "http://www.xlogam.com"
@@ -70,6 +78,10 @@
     "name": "Sergio Junca",
     "profile": "/img/profiles/sergiojunca.jpg",
     "url": "https://twitter.com/junkitapro"
+  }, {
+    "name": "Sergio Martínez",
+    "profile": "/img/profiles/sergiomartinez.jpg",
+    "url": "https://twitter.com/misterymotion"
   }, {
     "name": "Yesid Rubiano",
     "profile": "/img/profiles/yesidrubiano.jpg",
