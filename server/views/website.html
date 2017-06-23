@@ -15,14 +15,14 @@
     <meta property="og:description" content="{{description}}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://bucaramangajs.org">
-    <meta property="og:image" content="http://bucaramangajs.org/img/seo.jpg">
+    <meta property="og:image" content="{{ "http://bucaramangajs.org" + nextEvent.image if nextEvent.defined else "http://bucaramangajs.org/img/seo.jpg" }}">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{title}}">
     <meta name="twitter:description" content="{{description}}">
     <meta name="twitter:site" content="@bucaramangajs">
     <meta name="twitter:creator" content="@bucaramangajs">
-    <meta name="twitter:image" content="http://bucaramangajs.org/img/seo.jpg">
+    <meta name="twitter:image" content="{{ "http://bucaramangajs.org" + nextEvent.image if nextEvent.defined else "http://bucaramangajs.org/img/seo.jpg" }}">
 
     <meta name="theme-color" content="#0288D1">
     <meta name="apple-mobile-web-app-capable" content="yes">
