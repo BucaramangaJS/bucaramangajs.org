@@ -10,11 +10,11 @@
     "¡Bienvenid@!"
   ],
   "nextEvent": {
-    "defined": false,
-    "meetup": "https://www.meetup.com/BucaramangaJS/events/240982894/",
+    "defined": true,
+    "meetup": "https://www.meetup.com/BucaramangaJS/events/241010008/",
     "gmaps": "https://www.google.com.co/maps/place/Medios+Tic/@7.0864326,-73.1168346,17z/data=!3m1!4b1!4m5!3m4!1s0x8e683fa3b21919cd:0xf5eb0c49daf26a2e!8m2!3d7.0864326!4d-73.1146459",
-    "title": "Introducción sobre Aplicaciones Node y React.JS y su integración con Symfony y Drupal",
-    "description": "En esta versión aprenderemos cómo crear aplicaciones web en Node.js usando la poderosa librería React.js y cómo integrarlas con proyectos basadas en PHP con los frameworks Symfony y Drupal. También veremos una introducción a NodeBots y cómo crear robots usando JavaScript. No te lo pierdas!",
+    "title": "Testing en JavaScript con Mocha y Chai",
+    "description": "En esta versión nos introduciremos al testing de aplicaciones web con las herramientas Mocha y Chai haciendo uso de las metodologías BDD. También veremos una introducción a NodeBots y cómo crear robots usando JavaScript. No te lo pierdas!",
     "image": "/img/events/meetup8.jpg",
     "date": "29 de Junio",
     "time": "7 a 9 PM",
