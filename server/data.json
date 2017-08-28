@@ -10,13 +10,13 @@
     "¡Bienvenid@!"
   ],
   "nextEvent": {
-    "defined": false,
-    "meetup": "https://www.meetup.com/BucaramangaJS/events/240982894/",
+    "defined": true,
+    "meetup": "https://www.meetup.com/BucaramangaJS/events/242757710/",
     "gmaps": "https://www.google.com.co/maps/place/Medios+Tic/@7.0864326,-73.1168346,17z/data=!3m1!4b1!4m5!3m4!1s0x8e683fa3b21919cd:0xf5eb0c49daf26a2e!8m2!3d7.0864326!4d-73.1146459",
-    "title": "Introducción sobre Aplicaciones Node y React JS y su integración con Symfony y Drupal",
-    "description": "En esta versión hablaremos sobre cómo crear aplicaciones web con Node.js haciendo uso de la librería React JS, en donde aprenderemos cómo integrarlo con aplicaciones basadas en frameworks PHP como Symfony y Drupal, por (Enzo) Eduardo García de weknowinc.com.",
-    "image": "/img/events/meetup9.jpg",
-    "date": "Viernes, 28 de Julio",
+    "title": "Segunda introducción a NodeBots",
+    "description": "Te invitamos a nuestro próximo BucaramangaJS para que juntos aprendamos acerca  de Hardware, Robots, Internet of Things, Javascript y mucho más!",
+    "image": "/img/events/meetup10.jpg",
+    "date": "Jueves, 31 de Agosto",
     "time": "7 a 9 PM",
     "place": "Medios TIC, Cl. 103 #22a-27"
   },
