@@ -10,7 +10,7 @@
     "¡Bienvenid@!"
   ],
   "nextEvent": {
-    "defined": true,
+    "defined": false,
     "meetup": "https://www.meetup.com/BucaramangaJS/events/242757710/",
     "gmaps": "https://www.google.com.co/maps/place/Medios+Tic/@7.0864326,-73.1168346,17z/data=!3m1!4b1!4m5!3m4!1s0x8e683fa3b21919cd:0xf5eb0c49daf26a2e!8m2!3d7.0864326!4d-73.1146459",
     "title": "Segunda introducción a NodeBots",
